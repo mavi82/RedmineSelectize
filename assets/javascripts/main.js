@@ -59,7 +59,7 @@ function initSelect2() {
                 width: "resolve",
                 placeholder: "",
                 allowClear : true,
-                width: '100%',
+                width: 'auto',
                 debug: true
             });
         }
