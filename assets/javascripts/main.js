@@ -56,9 +56,9 @@ function initSelect2() {
             console.log("with: 100%", elements[i].id);
 
             $("#" + elements[i].id).select2({
-                width: "auto",
+                width: "90%",
                 placeholder: " ",
-                allowClear : true,
+                //allowClear : true,
                 debug: true
             });
         }
