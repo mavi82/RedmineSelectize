@@ -13,9 +13,9 @@ class ReactSelectPluginViewListener < Redmine::Hook::ViewListener
 
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
-      javascript_include_tag('select2-4.1.0-rc.0/js/select2.js', :plugin => :react_select_plugin) +
-      javascript_include_tag('main.js', :plugin => :react_select_plugin) +
-      stylesheet_link_tag('select2-4.1.0-rc.0/css/select2.css', :plugin => :react_select_plugin)
+      javascript_include_tag('select2-4.1.0-rc.0/js/select2.js', :plugin => :redmine_select2) +
+      javascript_include_tag('main.js', :plugin => :redmine_select2) +
+      stylesheet_link_tag('select2-4.1.0-rc.0/css/select2.css', :plugin => :redmine_select2)
   end
   
 end
