@@ -44,9 +44,8 @@ function initSelect2() {
             || elements[i].id == 'block-select') {
 
             $("#" + elements[i].id).select2({
-                width: "175px",
-                placeholder: "",
-                allowClear: true
+                width: "200px",
+                placeholder: ""
             });
         }
         else {
