@@ -18,7 +18,7 @@ With this plugin, all `select` tags in Redmine are automatically converted into 
 1. **Download and install the plugin:**
    - Clone the repository into the `plugins` folder of Redmine:
      ```bash
-     git clone https://github.com/your-repository/redmine-select2.git plugins/redmine-select2
+     git clone https://github.com/mavi82/RedmineSelect2.git redmine_select2
      ```
 
 2. **Run the database migration (if needed):**

@@ -1,11 +1,11 @@
 require 'redmine'
 
-Redmine::Plugin.register :react_select_plugin do
+Redmine::Plugin.register :redmine_select2 do
   name 'BE4 Select2 Plugin'
   author 'Mario Vicidomini'
   description 'Replace Select Tag with Select2'
   version '1.0.1'
-  url 'https://github.com/mavi82/Be4Select2_RedminePlugin'
+  url 'https://github.com/mavi82/RedmineSelect2.git'
   author_url 'https://github.com/mavi82'
 end
 
