@@ -52,10 +52,15 @@ function initSelect2() {
             });
         }
         else {
+
+            console.log("with: 100%", elements[i].id);
+
             $("#" + elements[i].id).select2({
                 width: "resolve",
                 placeholder: "",
-                allowClear: true
+                allowClear : true,
+                width: '100%',
+                debug: true
             });
         }
 
