@@ -43,9 +43,12 @@ function initSelect2() {
             || elements[i].id == 'settings_issuequery_query_id'
             || elements[i].id == 'block-select') {
 
+                console.log("with: 200px", elements[i].id);
+            
             $("#" + elements[i].id).select2({
                 width: "200px",
-                placeholder: ""
+                placeholder: "",
+                allowClear: true
             });
         }
         else {
