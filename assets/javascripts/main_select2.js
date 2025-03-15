@@ -43,18 +43,23 @@ function initSelect2() {
             || elements[i].id == 'settings_issuequery_query_id'
             || elements[i].id == 'block-select') {
 
-            console.log("with: 200px", elements[i].id);
-
-            $("#" + elements[i].id).selectize({
-                plugins: ["clear_button"],
+                console.log("with: 200px", elements[i].id);
+            
+            $("#" + elements[i].id).select2({
+                width: "200px",
+                placeholder: "",
+                allowClear: true
             });
         }
         else {
 
             console.log("with: 100%", elements[i].id);
 
-            $("#" + elements[i].id).selectize({
-                plugins: ["clear_button"],
+            $("#" + elements[i].id).select2({
+                width: "90%",
+                placeholder: " ",
+                //allowClear : true,
+                debug: true
             });
         }
 
