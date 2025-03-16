@@ -53,30 +53,23 @@ function initSelect2() {
         else {
 
             console.log("with: 100%", elements[i].id);
-            //fix per problema utente <<io>>>
+            //fix per problema utente <<io>>>   
+            var selValue = "mvNoSet";
             if(elements[i].id == 'issue_assigned_to_id') {
-                var selText = $("#" + elements[i].id).find(":selected").text();
-                var selValue = $("#" + elements[i].id).find(":selected").val();
-
-                console.log(selText, selValue);
+                selValue = $("#" + elements[i].id).find(":selected").val();
             }
-
 
             let $select = $("#" + elements[i].id).selectize({
                 plugins: ["clear_button"]
             });
 
+            //Controllo che il valore sia impostato ed eventualmente lo reimposto
             if(elements[i].id == 'issue_assigned_to_id') {
-                
-                var conceptName = $("#" + elements[i].id).find(":selected").text();
-                var conceptName = $("#" + elements[i].id).find(":selected").val();
-
-                console.log($("#" + elements[i].id).find(":selected"));
-
                 var selectizeControl = $select[0].selectize
-                var test = selectizeControl.getValue();
-                console.log(test);
 
+                if(selValue != electizeControl.getValue() && selValue != "mvNoSet") {
+                    selectizeControl.setValue(selValue);
+                }
             }
         }
 
