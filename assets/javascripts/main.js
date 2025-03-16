@@ -67,7 +67,7 @@ function initSelect2() {
             if(elements[i].id == 'issue_assigned_to_id') {
                 var selectizeControl = $select[0].selectize
 
-                if(selValue != electizeControl.getValue() && selValue != "mvNoSet") {
+                if(selValue != selectizeControl.getValue() && selValue != "mvNoSet") {
                     selectizeControl.setValue(selValue);
                 }
             }
