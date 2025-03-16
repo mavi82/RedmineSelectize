@@ -43,7 +43,7 @@ function initSelect2() {
             || elements[i].id == 'settings_issuequery_query_id'
             || elements[i].id == 'block-select') {
 
-            console.log("with: 200px", elements[i].id);
+            //console.log("with: 200px", elements[i].id);
 
             $("#" + elements[i].id).selectize({
                 plugins: ["clear_button"]
@@ -53,6 +53,14 @@ function initSelect2() {
         else {
 
             console.log("with: 100%", elements[i].id);
+            //fix per problema utente <<io>>>
+            if(elements[i].id == 'issue_assigned_to_id') {
+                var selText = $("#" + elements[i].id).find(":selected").text();
+                var selValue = $("#" + elements[i].id).find(":selected").val();
+
+                console.log(selText, selValue);
+            }
+
 
             let $select = $("#" + elements[i].id).selectize({
                 plugins: ["clear_button"]
