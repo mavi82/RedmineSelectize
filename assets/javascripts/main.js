@@ -45,19 +45,18 @@ function initSelect2() {
 
             console.log("with: 200px", elements[i].id);
 
-            // $("#" + elements[i].id).selectize({
-            //     plugins: ["clear_button"],
-            // });
-            debugger
+            $("#" + elements[i].id).selectize({
+                plugins: ["clear_button"]
+            });
+
         }
         else {
 
             console.log("with: 100%", elements[i].id);
 
-            // $("#" + elements[i].id).selectize({
-            //     plugins: ["clear_button"],
-            // });
-            debugger
+            $("#" + elements[i].id).selectize({
+                plugins: ["clear_button"]
+            });
         }
 
     }
