@@ -54,9 +54,22 @@ function initSelect2() {
 
             console.log("with: 100%", elements[i].id);
 
-            $("#" + elements[i].id).selectize({
+            let $select = $("#" + elements[i].id).selectize({
                 plugins: ["clear_button"]
             });
+
+            if(elements[i].id == 'issue_assigned_to_id') {
+                
+                var conceptName = $('#aioConceptName').find(":selected").text();
+                var conceptName = $('#aioConceptName').find(":selected").val();
+
+                console.log($("#" + elements[i].id).find(":selected"));
+
+                var selectizeControl = $select[0].selectize
+                var test = selectize.getValue();
+                console.log(test);
+
+            }
         }
 
     }
