@@ -25,7 +25,7 @@
 
 }(jQuery));
 
-const excludeItems = ['available_c', 'selected_c'];
+const excludeItems = ['available_c', 'selected_c','add_filter_select'];
 
 function initSelect2() {
 
