@@ -60,13 +60,13 @@ function initSelect2() {
 
             if(elements[i].id == 'issue_assigned_to_id') {
                 
-                var conceptName = $('#aioConceptName').find(":selected").text();
-                var conceptName = $('#aioConceptName').find(":selected").val();
+                var conceptName = $("#" + elements[i].id).find(":selected").text();
+                var conceptName = $("#" + elements[i].id).find(":selected").val();
 
                 console.log($("#" + elements[i].id).find(":selected"));
 
                 var selectizeControl = $select[0].selectize
-                var test = selectize.getValue();
+                var test = selectizeControl.getValue();
                 console.log(test);
 
             }
