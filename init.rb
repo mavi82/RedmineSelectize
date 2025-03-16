@@ -15,7 +15,7 @@ class ReactSelectPluginViewListener < Redmine::Hook::ViewListener
   def view_layouts_base_html_head(context)
       javascript_include_tag('selectize.js', :plugin => :redmine_select2) +
       javascript_include_tag('main.js', :plugin => :redmine_select2) +
-      stylesheet_link_tag('selectize.default.css', :plugin => :redmine_select2)
+      stylesheet_link_tag('selectize.legacy.css', :plugin => :redmine_select2)
   end
   
 end
